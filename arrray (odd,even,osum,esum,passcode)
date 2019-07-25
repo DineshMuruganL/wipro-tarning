@@ -1,0 +1,40 @@
+public class MyClass {
+public static void main(String args[]) {
+int a[]=new int[6];
+int e[]=new int[6];
+int o[]=new int[6];
+int i,c=0,d=0,esum=0,osum=0;
+a[0]=1;
+a[1]=2;
+a[2]=3;
+a[3]=4;
+a[4]=5;
+a[5]=6;
+for(i=0;i<a.length;i++)
+{
+if(a[i]%2==0)
+{
+e[c++]=a[i];
+System.out.println("even no :"+a[i]);
+}
+else
+{
+o[d++]=a[i];
+System.out.println("odd no :"+a[i]);
+}
+}
+System.out.println("count of even :"+c);
+System.out.println("count of odd :"+d);
+for(i=0;i<c;i++)
+esum=esum+e[i];
+for(i=0;i<d;i++)
+osum=osum+o[i];
+System.out.println("sum of even :"+esum);
+System.out.println("sum  of odd :" +osum);
+for(i=0;i<c;i++)
+{
+System.out.println("passcode are :");
+System.out.println(""+esum+c+e[i]+o[i]+d+osum);
+}
+}
+}
