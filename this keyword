@@ -1,0 +1,21 @@
+//THIS KEY WORD PROGRAM
+public class Address {
+String city,state,country;  
+  
+public Address(String city, String state, String country) {  
+    this.city = city;  
+    this.state = state;  
+    this.country = country;
+    System.out.println(this.city +" "+ this.state +" "+ this.country);
+}
+public static void main(String... arg)
+{
+    
+    Address o=new Address("chennai","tamilnadu","india");
+}}
+
+//OUTPUT:
+chennai tamilnadu india
+
+
+//THIS KEYWORD ACT AS A INSTANCE VARIABLE...
