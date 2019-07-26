@@ -1,0 +1,38 @@
+abstract class MyClass {
+    abstract public void fun();
+}
+ class bike extends MyClass
+{ public  void dinu(){
+                System.out.println(" dinu hi");
+            }
+   public void fun(){
+        System.out.println("bike hi");
+        dinu();
+            }
+         
+            
+}
+ class car extends MyClass
+{
+   public void fun(){
+        System.out.println("car hi");
+            }
+            //void dinu(){
+              //  System.out.println(" dinu hi");
+            //}
+            
+}
+public class acess{
+     public void din(){
+                System.out.println(" din hi");
+            }
+            
+    public static void main(String args[]) {
+        MyClass o=new bike();
+        MyClass oo=new car();
+     
+        o.fun();
+           oo.fun();        
+        
+    }
+}
