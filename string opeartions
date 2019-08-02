@@ -1,0 +1,47 @@
+//c program
+
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+    int x,y,z,i;
+    char a[10],b[10],c[10],d;
+    scanf("%s %s %s",a,b,c);
+    x=strlen(a);
+    y=strlen(b);
+    z=strlen(c);
+    //print symbol for a,e,i,o,u
+    for(i=0;i<x;i++)
+     {
+     if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u')
+     printf("$");
+     else
+     printf("%c",a[i]);
+     }
+     printf("\n");
+     //print symbnol for non a,e,i,o,u
+    for(i=0;i<y;i++)
+     {
+     if(b[i]=='a'||b[i]=='e'||b[i]=='i'||b[i]=='o'||b[i]=='u')
+     printf("%c",b[i]);
+     else
+     printf("#");
+     }
+     printf("\n");
+     //print upper to lower or lower to upper
+    for(i=0;i<z;i++)
+    {
+    if(c[i]>='A'&&c[i]<='Z')
+      {
+     d=c[i]+32;
+      printf("%c",d);
+      }
+      else
+      {
+      d=c[i]-32;
+      printf("%c",d);
+      }
+    }
+    return 0;
+}
